@@ -82,12 +82,12 @@ export default function Home() {
             Big Book Cards:
             </h2>
             <p className={inter.className}>
-            52 Quotes From AA's Big Book
+            52 Quotes from AA's Big Book
             </p>
           </a>
         </div>
         <div className={styles.description}>
-          <h1 className={styles.title}>Tools:</h1>
+          <h1 className={styles.title}>Readings:</h1>
         </div>
         <div className={styles.grid}>
           <a
@@ -97,10 +97,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            My Mind Is Out To Get Me:
+            AA Preamble:
             </h2>
             <p className={inter.className}>
-            Humour and Wisdom in Recovery
+            A Short Definition of A.A's Main Purpose
             </p>
           </a>
           <a
@@ -110,10 +110,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            101 Common Cliches of Alcoholics Anonymous:
+            Chapter 3:
             </h2>
             <p className={inter.className}>
-            The Sayings the Newcomers Hate and the Oldtimers Love
+            More About Alcoholism
             </p>
           </a>
           <a
@@ -123,10 +123,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            101 Additional Common Cliches of Alcoholics Anonymous:
+            Chapter 5:
             </h2>
             <p className={inter.className}>
-            More Sayings the Newcomers Hate and the Oldtimers Love
+            How It Works
             </p>
           </a>
 
@@ -137,28 +137,15 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            Sober Cards:
+            12 Traditions:
             </h2>
             <p className={inter.className}>
-            Inspirational Playing Cards for Those of us in Recovery
-            </p>
-          </a>
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Big Book Cards:
-            </h2>
-            <p className={inter.className}>
-            52 Quotes From AA's Big Book
+            Of Alcoholics Anonymous
             </p>
           </a>
         </div>
         <div className={styles.description}>
-          <h1 className={styles.title}>Tools:</h1>
+          <h1 className={styles.title}>Meeting Format:</h1>
         </div>
         <div className={styles.grid}>
           <a
@@ -168,10 +155,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            My Mind Is Out To Get Me:
+            Host Script:
             </h2>
             <p className={inter.className}>
-            Humour and Wisdom in Recovery
+            Meeting Format for the Host
             </p>
           </a>
           <a
@@ -181,37 +168,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            101 Common Cliches of Alcoholics Anonymous:
+            Post In Chat:
             </h2>
             <p className={inter.className}>
-            The Sayings the Newcomers Hate and the Oldtimers Love
-            </p>
-          </a>
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            101 Additional Common Cliches of Alcoholics Anonymous:
-            </h2>
-            <p className={inter.className}>
-            More Sayings the Newcomers Hate and the Oldtimers Love
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Sober Cards:
-            </h2>
-            <p className={inter.className}>
-            Inspirational Playing Cards for Those of us in Recovery
+            Information to be Posted In Chat
             </p>
           </a>
           <a
@@ -221,10 +181,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            Big Book Cards:
+            AA Responsibility Statement:
             </h2>
             <p className={inter.className}>
-            52 Quotes From AA's Big Book
+            To end the Meeting
             </p>
           </a>
         </div>
