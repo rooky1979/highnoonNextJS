@@ -1,23 +1,27 @@
 export const readings = [
     {
       id: '1',
-      book: 'AA Preamble:',
+      title: 'AA Preamble:',
       tagline: 'A Short Definition of A.A\'s Main Purpose',
+      ref: '/preamble',
     },
     {
       id: '2',
-      book: 'Chapter 3:',
-      quote: "More About Alcoholism",
+      title: 'Chapter 3:',
+      tagline: "More About Alcoholism",
+      ref: "/chapter3",
     },
     {
       id: '3',
-      book: 'Chapter 5:',
-      quote: 'How It Works',
+      title: 'Chapter 5:',
+      tagline: 'How It Works',
+      ref: '/chapter5',
     },
     {
       id: '4',
-      book: '12 Traditions:',
-      quote: 'Of Alcoholics Anonymous',
+      title: '12 Traditions:',
+      tagline: 'Of Alcoholics Anonymous',
+      ref: '/traditions'
     },
   ];
   
