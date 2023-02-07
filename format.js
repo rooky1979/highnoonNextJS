@@ -15,6 +15,6 @@ export const format = [
       id: '3',
       title: 'AA Responsibility Statement:',
       tagline: "To end the meeting",
-      ref: "/resStaatement",
+      ref: "/resStatement",
     },
   ];
