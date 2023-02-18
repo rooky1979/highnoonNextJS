@@ -1,6 +1,5 @@
 .navbar {
-  justify-content: end;
-/*   border: 2px solid black; */
+  display: flex;
   flex-direction: row;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 72px;
@@ -16,7 +15,6 @@
   padding-top: 1rem;
   padding-bottom: 7rem;
   min-height: 100vh;
-
 }
 
 .title {
@@ -318,4 +316,23 @@
   to {
     transform: rotate(0deg);
   }
+}
+/* reading texts */
+.textpanel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 7rem;
+  min-height: 100vh;
+}
+.readingtext {
+  font-size: x-large;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
