@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { tools } from "../toolsTitles";
 import { readings } from "../readingsTitles";
-import {format} from "../format";
+import { formats } from "../format";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,31 +31,15 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {readings.map((reading) => (
-            <a
-              href={reading.ref}
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>{reading.title}</h2>
-              <p className={inter.className}>{reading.tagline}</p>
-            </a>
+            <img className={styles.card} src={reading.src}/>
           ))}
         </div>
         <div className={styles.description}>
           <h1 className={styles.title}>Meeting Format:</h1>
         </div>
         <div className={styles.grid}>
-          {format.map((format) => (
-            <a
-              href={format.ref}
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>{format.title}</h2>
-              <p className={inter.className}>{format.tagline}</p>
-            </a>
+          {formats.map((format) => (
+            <img className={styles.card} src={format.src}/>
           ))}
         </div>
       </main>

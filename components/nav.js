@@ -8,6 +8,7 @@ const Nav = () => {
     alt="Picture of the author"
     width={850}
     height={150}
+    priority
   />
   </div>
 };
