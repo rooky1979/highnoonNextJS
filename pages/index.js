@@ -23,17 +23,8 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {tools.map((tool) => (
-            <a
-              href={tool.ref}
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 id={tool.toolid} className={inter.className}>
-                {tool.book}
-              </h2>
-              <p className={inter.className}>{tool.tagline}</p>
-            </a>
+            <img className={styles.card} src={tool.src}/>
+           
           ))}
         </div>
         <div className={styles.description}>
