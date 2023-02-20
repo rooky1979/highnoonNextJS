@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { tools } from "../toolsTitles";
@@ -22,8 +23,9 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {tools.map((tool) => (
+            <Link href={tool.ref}>
             <img className={styles.card} src={tool.src}/>
-           
+            </Link>
           ))}
         </div>
         <div className={styles.description}>
@@ -31,7 +33,9 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {readings.map((reading) => (
+            <Link href={reading.ref}>
             <img className={styles.card} src={reading.src}/>
+            </Link>
           ))}
         </div>
         <div className={styles.description}>
@@ -39,7 +43,9 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {formats.map((format) => (
+            <Link href={format.ref}>
             <img className={styles.card} src={format.src}/>
+            </Link>
           ))}
         </div>
       </main>
