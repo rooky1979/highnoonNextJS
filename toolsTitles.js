@@ -34,4 +34,11 @@ export const tools = [
     ref: "/bbCards",
     src: "bbcards.png",
   },
+  {
+    id: "6",
+    book: "Godshot:",
+    tagline: "52 taglines from AA's Big Book",
+    ref: "/godShot",
+    src: "godshot.png",
+  },
 ];

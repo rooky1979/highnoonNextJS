@@ -1,21 +1,29 @@
 .navbar {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 72px;
-  margin-left: 20px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("/casino.png");
+  padding: 40px;
 }
+.navimg {
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 10px white);
+}
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 6rem;
   padding-right: 6rem;
   padding-top: 1rem;
   padding-bottom: 7rem;
   min-height: 100vh;
+  background-image: url("/casino.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .title {
@@ -23,7 +31,10 @@
   font-family: Arial, Helvetica, sans-serif;
   justify-content: flex-start;
   padding-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-left: 25px;
+  color: white;
+  text-shadow: 2px 2px crimson;
 }
 
 .description {
@@ -60,7 +71,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(15%, auto));
+  grid-template-columns: repeat(6, minmax(15%, auto));
   width: var(--max-width);
   max-width: 100%;
   gap: 10px 10px;
@@ -71,13 +82,12 @@
 .card {
   /* padding: 1rem 1.2rem; */
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
+  background: beige;
   border: 1px solid rgb(84, 87, 89);
   transition: background 200ms, border 200ms;
-  height: 150px;/* remove if not working */
+  height: 150px; /* remove if not working */
   width: 150px;
   border-image: fill;
-  
 }
 
 .card span {
@@ -123,7 +133,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -151,7 +161,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -180,8 +190,9 @@
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
+    background: rgba(var(--card-rgb), 0.5);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    opacity: 0.6;
   }
 
   .card:hover span {
@@ -204,20 +215,20 @@
   .content {
     padding: 4rem;
   }
-@media (max-width: 700px) {
-  .main {
-    padding: 4rem;
-    justify-content: center;
-    align-items: center;
+  @media (max-width: 700px) {
+    .main {
+      padding: 4rem;
+      justify-content: center;
+      align-items: center;
+    }
   }
-}
-@media (max-width: 700px) {
-  .title {
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
+  @media (max-width: 700px) {
+    .title {
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
   }
-}
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -292,9 +303,9 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 927px) and (max-width: 1000px) {
+@media (min-width: 927px) and (max-width: 1165px) {
   .grid {
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(5, 20%);
     gap: 20px 20px;
     padding: 0.5rem;
     justify-content: center;
