@@ -1,185 +1,132 @@
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import useSWR from "swr";
+import Link from "next/link";
+
 
 const inter = Inter({ subsets: ["latin"] });
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function postInChat() {
+export default function preamble() {
+  const { data, error } = useSWR("/api/chatAPI", fetcher);
+
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <div>Loading....</div>;
+
+  const chatText = JSON.parse(data);
   return (
     <>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <h1 className={styles.title}>Post In chat</h1>
+      <main className={styles.readingsmain}>
+        <div className={styles.inline}>
+      <h1 className={styles.title}>Post In Chat</h1>
+      <Link href="./" className={styles.btn}>Back</Link>
+      </div>
+        <div className={styles.textpanel}>
+          <p className={styles.readingtext}>
+          <span><strong>ANNOUNCEMENT ABOUT SAFETY:</strong></span>
+          <br></br><br></br>
+          {chatText.chat.text1}
+          <br></br><br></br>
+          {chatText.chat.text2}
+          <br></br><br></br>
+          {chatText.chat.text3}
+          <br></br><br></br>
+          {chatText.chat.text4}
+          <br></br><br></br>
+          {chatText.chat.text5}
+          <br></br><br></br>
+          {chatText.chat.text6}
+          <br></br><br></br>
+          <span><strong>END OF MEETING ANNOUNCEMENTS:</strong></span>
+          <br></br><br></br>
+          {chatText.chat.text7}
+          <br></br><br></br>
+          {chatText.chat.text8}
+          <br></br><br></br>
+          <span><strong>Meeting attendance verification/Court card requests:</strong></span>
+          <br></br><br></br>
+          {chatText.chat.text10}
+          <br></br><br></br>
+          <span><strong>Questions: </strong></span>
+          {chatText.chat.text11}
+          <br></br><br></br>
+          {chatText.chat.text12}
+          <br></br><br></br>
+          {chatText.chat.text13}
+          <br></br>
+          {chatText.chat.text14}
+          <br></br>
+          {chatText.chat.text15}
+          <br></br>
+          {chatText.chat.text16}
+          <br></br>
+          {chatText.chat.text17}
+          <br></br><br></br>
+          {chatText.chat.text18}
+          <br></br><br></br>
+          {chatText.chat.text19}
+          <br></br><br></br>
+          {chatText.chat.text20}
+          <br></br><br></br>
+          {chatText.chat.text21}
+          <br></br><br></br>
+          {chatText.chat.text22}
+          <br></br><br></br>
+          {chatText.chat.text23}
+          <br></br><br></br>
+          {chatText.chat.text24}
+          <br></br><br></br>
+          {chatText.chat.text25}
+          <br></br><br></br>
+          {chatText.chat.text26}
+          <br></br><br></br>
+          {chatText.chat.text27}
+          <br></br><br></br>
+          {chatText.chat.text28}
+          <br></br><br></br>
+          {chatText.chat.text29}
+          <br></br><br></br>
+          {chatText.chat.text30}
+          <br></br><br></br>
+          {chatText.chat.text31}
+          <br></br><br></br>
+          {chatText.chat.text32}
+          <br></br><br></br>
+          {chatText.chat.text33}
+          <br></br><br></br>
+          {chatText.chat.text34}
+          <br></br><br></br>
+          {chatText.chat.text35}
+          <br></br><br></br>
+          {chatText.chat.text36}
+          <br></br><br></br>
+          {chatText.chat.text37}
+          <br></br><br></br>
+          {chatText.chat.text38}
+          <br></br><br></br>
+          {chatText.chat.text39}
+          <br></br><br></br>
+          {chatText.chat.text40}
+          <br></br><br></br>
+          {chatText.chat.text41}
+          <br></br><br></br>
+          {chatText.chat.text42}
+          <br></br><br></br>
+          {chatText.chat.text44}
+          <br></br><br></br>
+          {chatText.chat.text45}
+          <br></br><br></br>
+          {chatText.chat.text46}
+          <br></br><br></br>
+          {chatText.chat.text47}
+          <br></br><br></br>
+          {chatText.chat.text48}
+          <br></br><br></br>
+          {chatText.chat.text49}
+          <br></br><br></br>
+          {chatText.chat.text50}
+          </p>
         </div>
-        {/* <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            My Mind Is Out To Get Me:
-            </h2>
-            <p className={inter.className}>
-            Humour and Wisdom in Recovery
-            </p>
-          </a>
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            101 Common Cliches of Alcoholics Anonymous:
-            </h2>
-            <p className={inter.className}>
-            The Sayings the Newcomers Hate and the Oldtimers Love
-            </p>
-          </a>
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            101 Additional Common Cliches of Alcoholics Anonymous:
-            </h2>
-            <p className={inter.className}>
-            More Sayings the Newcomers Hate and the Oldtimers Love
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Sober Cards:
-            </h2>
-            <p className={inter.className}>
-            Inspirational Playing Cards for Those of us in Recovery
-            </p>
-          </a>
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Big Book Cards:
-            </h2>
-            <p className={inter.className}>
-            52 Quotes from AA's Big Book
-            </p>
-          </a>
-        </div>
-        <div className={styles.description}>
-          <h1 className={styles.title}>Readings:</h1>
-        </div>
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            AA Preamble:
-            </h2>
-            <p className={inter.className}>
-            A Short Definition of A.A's Main Purpose
-            </p>
-          </a>
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Chapter 3:
-            </h2>
-            <p className={inter.className}>
-            More About Alcoholism
-            </p>
-          </a>
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Chapter 5:
-            </h2>
-            <p className={inter.className}>
-            How It Works
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            12 Traditions:
-            </h2>
-            <p className={inter.className}>
-            Of Alcoholics Anonymous
-            </p>
-          </a>
-        </div>
-        <div className={styles.description}>
-          <h1 className={styles.title}>Meeting Format:</h1>
-        </div>
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Host Script:
-            </h2>
-            <p className={inter.className}>
-            Meeting Format for the Host
-            </p>
-          </a>
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            Post In Chat:
-            </h2>
-            <p className={inter.className}>
-            Information to be Posted In Chat
-            </p>
-          </a>
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-            AA Responsibility Statement:
-            </h2>
-            <p className={inter.className}>
-            To end the Meeting
-            </p>
-          </a>
-        </div> */}
       </main>
     </>
   );

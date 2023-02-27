@@ -402,6 +402,27 @@
   padding-top: 20px;
 }
 
+@media (min-width: 357px) and (max-width: 500px) {
+  .readingtext {
+    font-size: small;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 200px) and (max-width: 356px) {
+  .readingtext {
+    font-size: x-small;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+}
+
 .readingsmain {
   display: flex;
   flex-direction: column;
@@ -439,7 +460,7 @@
   flex-direction: row;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media (min-width: 250) and (max-width: 323px) {
+@media (min-width: 250) and (max-width: 366px) {
   .inline {
     display: flex;
     flex-direction: column;
