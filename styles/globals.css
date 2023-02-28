@@ -105,3 +105,12 @@ a {
     color-scheme: dark;
   }
 }
+
+::placeholder{
+  color: darkgray;
+  font-style: italic;
+  }
+
+  input, select, textarea {
+    color: rgb(31, 30, 30);
+    }
