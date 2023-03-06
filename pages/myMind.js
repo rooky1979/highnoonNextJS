@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function myMind() {
   return (
     <>
-      <main className={styles.main}>
-        <div className={styles.description}>
+      <main className={styles.readingsmain}>
+        <div /* className={styles.description} */>
           <div className={styles.formstyle}>
           <h1 className={styles.title}>My mind is out to get me</h1>
           <form action="/send-data-here" method="post">
