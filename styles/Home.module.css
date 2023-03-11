@@ -117,6 +117,21 @@
   border-image: fill;
   box-shadow: 0 8px 10px -px rgb(0, 0, 0);
 }
+.quotecard {
+  /* padding: 1rem 1.2rem; */
+  border-radius: var(--border-radius);
+  background: beige;
+  border: 1px solid rgb(84, 87, 89);
+  transition: background 200ms, border 200ms;
+  /* height: 150px;
+  width: 150px; */
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  border-image: fill;
+  box-shadow: 0 8px 10px -px rgb(0, 0, 0);
+}
 
 .card span {
   display: inline-block;
@@ -485,6 +500,7 @@
   background-color: white;
   padding: 5px;
   margin-left: 20px;
+  margin-bottom: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
 }
 
@@ -501,6 +517,7 @@
   margin-right: 0.5rem;
   margin-left: 2rem;
   margin-top: 0.75rem;
+  margin-bottom: 5px;
   outline: none;
   transition: all 0.2s ease-in;
   height: 30px;
