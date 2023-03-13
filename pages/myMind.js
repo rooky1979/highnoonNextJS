@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import { mymind } from "../json/mymind";
+import  mymind  from "../json/mymind";
 
 const inter = Inter({ subsets: ["latin"] });
 
