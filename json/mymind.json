@@ -1,5 +1,5 @@
-
-export const mymind = [
+{
+"mymind": [
     {
       "id": "1",
 
@@ -3322,5 +3322,5 @@ export const mymind = [
 
     }
   ]
-
+}
   

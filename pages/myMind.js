@@ -1,27 +1,27 @@
 import { useState, useEffect } from "react";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import  mymind  from "../json/mymind";
+import { mymind } from "../json/mymind";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function myMind() {
-
   const [allData, setAllData] = useState(mymind);
 
   useEffect(() => {
     setAllData(mymind);
-  },[])
+  }, []);
 
   const [filteredData, setFilteredData] = useState(allData);
 
   const handleSearch = (e) => {
+
     let value = e.target.value.toLowerCase();
     let result = [];
     result = allData.filter((data) => {
       return data.id.search(value) != -1;
     });
-  
+
     setFilteredData(result);
   };
 
