@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
+import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import { godshot } from "../json/godshot";
+//import { mymind } from "../json/mymind";
 
-const godShot = () => {
-  const inputFieldText = "Enter a number from 1 - 101";
-  const title = "God Shot";
-
-  const [allData, setAllData] = useState(godshot);
+const Tool = ({ book, placeholder }) => {
+  const [allData, setAllData] = useState(book);
 
   useEffect(() => {
-    setAllData(godshot);
+    setAllData(book);
   }, []);
 
   const [filteredData, setFilteredData] = useState(allData);
@@ -26,15 +24,11 @@ const godShot = () => {
 
   return (
     <>
-      <main className={styles.readingsmain}>
-        <div>
-          <div className={styles.formstyle}>
-            <h1 className={styles.title}>{title}</h1>
-            <form>
+      <form>
         <input
           className={styles.input}
           type="text"
-          placeholder={inputFieldText}
+          placeholder={placeholder}
           onChange={(e) => handleSearch(e)}
         />
         <button className={styles.btn} onClick="">{/* random for onClick */}
@@ -44,14 +38,11 @@ const godShot = () => {
       {filteredData?.map((saying) => (
         <div className={styles.quotecard} key={saying.id}>
           <div className={styles.readingtext}>
-            {saying.book}: {saying.quote}
+            {saying.id}: {saying.quote}
           </div>
         </div>
       ))}
-          </div>
-        </div>
-      </main>
     </>
   );
 };
-export default godShot;
+export default Tool;
