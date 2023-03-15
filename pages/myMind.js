@@ -5,6 +5,7 @@ import Tool from "@/components/Tool";
 const myMind = () => {
   const inputFieldText = "Enter a number from 1 - 526";
   const title = "My mind is out to get me";
+  const quoteNo = 526;
 
   return (
     <>
@@ -12,7 +13,7 @@ const myMind = () => {
         <div>
           <div className={styles.formstyle}>
             <h1 className={styles.title}>{title}</h1>
-            <Tool book={mymind} placeholder={inputFieldText} />
+            <Tool book={mymind} placeholder={inputFieldText} godshot={quoteNo} />
           </div>
         </div>
       </main>

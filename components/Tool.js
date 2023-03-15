@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 //import { mymind } from "../json/mymind";
 
-const Tool = ({ book, placeholder }) => {
+const Tool = ({ book, placeholder, godshot }) => {
   const [allData, setAllData] = useState(book);
 
   useEffect(() => {
@@ -13,14 +12,28 @@ const Tool = ({ book, placeholder }) => {
   const [filteredData, setFilteredData] = useState(allData);
 
   const handleSearch = (e) => {
-    let value = e.target.value.toLowerCase();
+    let value = e.target.value.toUpperCase();
     let result = [];
     result = allData.filter((data) => {
       return data.id.search(value) != -1;
     });
-
     setFilteredData(result);
+    console.log(filteredData);
   };
+
+  //need a random method for the deal button
+  const random = () => {
+
+  let rand = Math.random() * godshot;
+  rand = Math.floor(rand);
+
+  let result = [];
+    result = allData.filter((data) => {
+      return data.id.search(rand) != -1;
+    });
+    setFilteredData(result);
+    console.log(filteredData);
+};
 
   return (
     <>
@@ -31,8 +44,8 @@ const Tool = ({ book, placeholder }) => {
           placeholder={placeholder}
           onChange={(e) => handleSearch(e)}
         />
-        <button className={styles.btn} onClick="">{/* random for onClick */}
-          Deal
+        <button  type="button" className={styles.btn} onClick={random}>
+          Random
         </button>
       </form>
       {filteredData?.map((saying) => (

@@ -5,6 +5,7 @@ import Tool from "@/components/Tool";
 const commonCliches = () => {
   const inputFieldText = "Enter a number from 1 - 101";
   const title = "101 Common Cliches";
+  const quoteNo = 101;
 
   return (
     <>
@@ -12,7 +13,7 @@ const commonCliches = () => {
         <div>
           <div className={styles.formstyle}>
             <h1 className={styles.title}>{title}</h1>
-            <Tool book={commoncliches} placeholder={inputFieldText} />
+            <Tool book={commoncliches} placeholder={inputFieldText} godshot={quoteNo} />
           </div>
         </div>
       </main>

@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import styles from "@/styles/Home.module.css";
 import { godshot } from "../json/godshot";
 
-const godShot = () => {
-  const inputFieldText = "Enter a number from 1 - 101";
+const soberCards = () => {
+
+  const inputFieldText = "Hit the button for a random shot";
   const title = "God Shot";
+  const quoteNo = 450;
 
   const [allData, setAllData] = useState(godshot);
 
@@ -15,14 +17,28 @@ const godShot = () => {
   const [filteredData, setFilteredData] = useState(allData);
 
   const handleSearch = (e) => {
-    let value = e.target.value.toLowerCase();
+    let value = e.target.value.toUpperCase();
     let result = [];
     result = allData.filter((data) => {
       return data.id.search(value) != -1;
     });
-
     setFilteredData(result);
+    console.log(filteredData);
   };
+
+  //need a random method for the deal button
+  const random = () => {
+
+  let rand = Math.random() * quoteNo;
+  rand = Math.floor(rand);
+
+  let result = [];
+    result = allData.filter((data) => {
+      return data.id.search(rand) != -1;
+    });
+    setFilteredData(result);
+    console.log(filteredData);
+};
 
   return (
     <>
@@ -30,17 +46,10 @@ const godShot = () => {
         <div>
           <div className={styles.formstyle}>
             <h1 className={styles.title}>{title}</h1>
-            <form>
-        <input
-          className={styles.input}
-          type="text"
-          placeholder={inputFieldText}
-          onChange={(e) => handleSearch(e)}
-        />
-        <button className={styles.btn} onClick="">{/* random for onClick */}
-          Deal
+        <p className={styles.title} >{inputFieldText}</p>
+        <button  type="button" className={styles.btn} onClick={random}>
+          Random
         </button>
-      </form>
       {filteredData?.map((saying) => (
         <div className={styles.quotecard} key={saying.id}>
           <div className={styles.readingtext}>
@@ -53,5 +62,5 @@ const godShot = () => {
       </main>
     </>
   );
-};
-export default godShot;
+}
+export default soberCards;
