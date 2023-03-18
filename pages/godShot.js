@@ -1,10 +1,10 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "@/styles/Home.module.css";
 import { godshot } from "../json/godshot";
 
 const soberCards = () => {
-
-  const inputFieldText = "Hit the button for a random shot";
+  const inputFieldText = "Click the button for a random shot from any tool";
   const title = "God Shot";
   const quoteNo = 450;
 
@@ -16,29 +16,19 @@ const soberCards = () => {
 
   const [filteredData, setFilteredData] = useState(allData);
 
-  const handleSearch = (e) => {
-    let value = e.target.value.toUpperCase();
-    let result = [];
-    result = allData.filter((data) => {
-      return data.id.search(value) != -1;
-    });
-    setFilteredData(result);
-    console.log(filteredData);
-  };
-
   //need a random method for the deal button
   const random = () => {
+    let rand = Math.random() * quoteNo;
+    rand = Math.floor(rand);
+    console.log(rand);
 
-  let rand = Math.random() * quoteNo;
-  rand = Math.floor(rand);
-
-  let result = [];
+    let result;
     result = allData.filter((data) => {
       return data.id.search(rand) != -1;
     });
     setFilteredData(result);
     console.log(filteredData);
-};
+  };
 
   return (
     <>
@@ -46,21 +36,26 @@ const soberCards = () => {
         <div>
           <div className={styles.formstyle}>
             <h1 className={styles.title}>{title}</h1>
-        <p className={styles.title} >{inputFieldText}</p>
-        <button  type="button" className={styles.btn} onClick={random}>
-          Random
-        </button>
-      {filteredData?.map((saying) => (
-        <div className={styles.quotecard} key={saying.id}>
-          <div className={styles.readingtext}>
-            {saying.book}: {saying.quote}
-          </div>
-        </div>
-      ))}
+            <h3 className={styles.title}>{inputFieldText}</h3>
+            <div className={styles.inline} >
+            <button type="button" className={styles.btn} onClick={random}>
+              GodShot
+            </button>
+            <Link href="./" className={styles.backbtn}>
+              Back
+            </Link>
+            </div>
+            {filteredData?.map((saying) => (
+              <div className={styles.quotecard} key={saying.id}>
+                <div className={styles.quotetext}>
+                  {saying.book}: {saying.quote}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </main>
     </>
   );
-}
+};
 export default soberCards;

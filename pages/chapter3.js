@@ -19,7 +19,7 @@ export default function preamble() {
       <main className={styles.readingsmain}>
         <div className={styles.inline}>
       <h1 className={styles.title}>Chapter 3 - More About Alcoholism</h1>
-      <Link href="./" className={styles.btn}>Back</Link>
+      <Link href="./" className={styles.backbtn}>Back</Link>
       </div>
         <div className={styles.textpanel}>
           <p className={styles.readingtext}>{chapter3Text.chapter3.text1}

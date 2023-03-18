@@ -264,7 +264,8 @@
             "book": "My Mind Is Out To Get Me",
       
             "quote": "It hasn't been a bad day just because a few things haven't gone my way"
-          },{
+          },
+          {
             "id": "45",
             "book": "101 Common Cliches",
       
@@ -329,7 +330,8 @@
             "book": "101 Common Cliches",
       
             "quote": "Where's your higher power?"
-          }, {
+          }, 
+          {
             "id": "56",
              "book": "Additional Cliches",
              "quote":
@@ -380,11 +382,11 @@
        
            },
            {
-             "holder": "64",
+             "id": "64",
              "book": "Big Book Cards",
-             "quote": "\"Our ideas did not work. But the God idea did.\" - page 52",
-             "id": "761"
-           },{
+             "quote": "\"Our ideas did not work. But the God idea did.\" - page 52"
+           },
+           {
             "id": "65",
             "book": "My Mind Is Out To Get Me",
       
@@ -733,58 +735,49 @@
       
             "quote": "If you don't drink, you won't get drunk."
           },      {
-            "holder": "35",
             "book": "Big Book Cards",
             "quote": "\"We relax and take it easy. We don't struggle.\" - Page 86",
             "id": "124"
           },
           {
-            "holder": "36",
             "book": "Big Book Cards",
             "quote": "\"First things first. Live and let live. Easy does it.\" - Page 135",
             "id": "125"
           },
           {
-            "holder": "37",
             "book": "Big Book Cards",
             "quote":
               "\"Actually we were fooling ourselves, for deep down in every man, woman, and child, is the fundamental idea of God.\" - Page 55",
             "id": "126"
           },
           {
-            "holder": "38",
+
             "book": "Big Book Cards",
             "quote":
               "\"Most alcoholics owe money. We do not dodge our creditors.\" - Page 78",
             "id": "127"
           },
           {
-            "holder": "39",
+    
             "book": "Big Book Cards",
             "quote":
               "\"Some of us have tried to hold on to our old ideas and the result was nil until we let go absolutely.\" - Page 58",
             "id": "128"
           },
           {
-            "holder": "40",
+
             "book": "Big Book Cards",
             "quote":
               "\"If sex is very troublesome, we throw ourselves the harder into helping others. We think of their needs and work for them. This takes us out of ourselves.\" - Page 70",
             "id": "129"
           },
           {
-            "holder": "41",
+
             "book": "Big Book Cards",
             "quote":
               "\"Rarely have we seen a person fail who has thoroughly followed our path\" - Page 58",
             "id": "130"
-          },      {
-            "id": "685",
-             "book": "Additional Cliches",
-             "quote":
-               "God wants us to go to meetings, so He can give us our daily messages."
-       
-           },
+          },     
            {
             "id": "131",
              "book": "Additional Cliches",
@@ -888,12 +881,7 @@
             "quote": "Don't let people rent space in your head.",
             "book": "Sober Cards",
             "id": "147"
-          },    {
-            "id": "166",
-            "book": "My Mind Is Out To Get Me",
-      
-            "quote": "When you're afraid, pick up the five-hundred-pound telephone and call someone"
-          },
+          },    
           {
             "id": "148",
             "book": "My Mind Is Out To Get Me",
@@ -1079,18 +1067,18 @@
              "quote": "Before I came to AA, I was dying for a drink."
        
            },{
-            "holder": "179",
+
             "book": "Big Book Cards",
             "quote":
               "\"Resentment is the number one offender. It destroys more alcoholics than anything else.\" - Page 64",
-            "id": "770"
+            "id": "179"
           },
           {
-            "holder": "180",
+
             "book": "Big Book Cards",
             "quote":
               "\"Lack of power that was our dilemma. We had to find a power by which we could live, and it had to be a power greater than ourselves.\" - Page 45",
-            "id": "771"
+            "id": "180"
           },
           {
             "holder": "12",
@@ -1106,12 +1094,6 @@
               "\"The age of miracles is still with us. Our own recovery proves that!\" - Page 153",
             "id": "182"
           },
-     {
-        "id": "23",
-        "book": "My Mind Is Out To Get Me",
-  
-        "quote": "Platitudes can help with your attitudes"
-      },
       {
         "id": "183",
         "book": "My Mind Is Out To Get Me",
@@ -1378,15 +1360,7 @@
         "book": "101 Common Cliches",
   
         "quote": "Ican't; He can; I think I'll let him."
-      },
-      {
-        "id": "552",
-        "book": "101 Common Cliches",
-  
-        "quote": "I didn't get into trouble every time I drank; but every time I got in trouble I was drinking."
-      },
-      
-      
+      },      
       {
         "id": "227",
         "book": "101 Common Cliches",
@@ -1446,7 +1420,14 @@
         "book": "Additional Cliches",
         "quote": "A moment of clarity."
   
-      }, {
+      }, 
+      {
+        "id": "237",
+        "book": "101 Common Cliches",
+  
+        "quote": "I didn't get into trouble every time I drank; but every time I got in trouble I was drinking."
+      },
+      {
         "id": "238",
          "book": "Additional Cliches",
          "quote": "If I wasn't in here, I'd be out there."
@@ -2746,6 +2727,24 @@
         "book": "My Mind Is Out To Get Me",
   
         "quote": "My favourite prayer has only one word: Help"
+      }, 
+      {
+        "id": "451",
+         "book": "Additional Cliches",
+         "quote":
+           "God wants us to go to meetings, so He can give us our daily messages."
+       },
+       {
+        "id": "452",
+        "book": "My Mind Is Out To Get Me",
+  
+        "quote": "When you're afraid, pick up the five-hundred-pound telephone and call someone"
+      },
+      {
+        "id": "453",
+        "book": "My Mind Is Out To Get Me",
+  
+        "quote": "Platitudes can help with your attitudes"
       }
     ]
 }

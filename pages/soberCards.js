@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "@/styles/Home.module.css";
 import { sobercards } from "../json/sobercards";
@@ -56,10 +57,11 @@ const soberCards = () => {
         <button  type="button" className={styles.btn} onClick={random}>
           Random
         </button>
+        <Link href="./" className={styles.backbtn}>Back</Link>
       </form>
       {filteredData?.map((saying) => (
         <div className={styles.quotecard} key={saying.id}>
-          <div className={styles.readingtext}>
+          <div className={styles.quotetext}>
             {saying.id}: {saying.quote}
           </div>
         </div>

@@ -6,6 +6,7 @@ const bbCards = () => {
 
   const inputFieldText = "Enter a number between 1 - 46";
   const title = "Big Book Cards";
+  const quoteNo = 46;
 
   return (
     <>
@@ -13,7 +14,7 @@ const bbCards = () => {
         <div>
           <div className={styles.formstyle}>
             <h1 className={styles.title}>{title}</h1>
-            <Tool book={bbcards} placeholder={inputFieldText}/>
+            <Tool book={bbcards} placeholder={inputFieldText} godshot={quoteNo}/>
           </div>
         </div>
       </main>

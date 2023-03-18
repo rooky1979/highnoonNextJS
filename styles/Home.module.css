@@ -63,6 +63,17 @@
   color: white;
   text-shadow: 2px 2px crimson;
 }
+.quotetext {
+  font-size: x-large;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 25px;
+  color: white;
+  text-shadow: 2px 2px crimson;
+}
 
 .description {
   display: inherit;
@@ -115,22 +126,20 @@
   height: 150px; /* remove if not working */
   width: 150px;
   border-image: fill;
-  box-shadow: 0 8px 10px -px rgb(0, 0, 0);
+  filter: drop-shadow(0px 8px 10px rgb(0, 0, 0));
 }
 .quotecard {
-  /* padding: 1rem 1.2rem; */
   border-radius: var(--border-radius);
-  background: beige;
+  background: rgb(126, 129, 125);
   border: 1px solid rgb(84, 87, 89);
-  transition: background 200ms, border 200ms;
-  /* height: 150px;
-  width: 150px; */
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15PX;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 15px;
-  border-image: fill;
-  box-shadow: 0 8px 10px -px rgb(0, 0, 0);
+  filter: drop-shadow(0px 8px 10px rgb(0, 0, 0));
 }
 
 .card span {
@@ -548,4 +557,44 @@
     transition: all 0.2s ease-in;
     height: 30px;
   }
+}
+.backbtn {
+  display: inline-block;
+  background: #f32323;
+  color: #ffffff;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 2rem;
+  margin-top: 0.75rem;
+  margin-bottom: 5px;
+  outline: none;
+  transition: all 0.2s ease-in;
+  height: 30px;
+}
+@media (min-width: 200px) and (max-width: 466px) {
+  .backbtn {
+    display: inline-block;
+    background: #f32323;
+    color: #ffffff;
+    padding: 0.4rem 1.3rem;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 1.3rem;
+    margin-top: 0.75rem;
+    outline: none;
+    transition: all 0.2s ease-in;
+    height: 30px;
+  }
+}
+.backbtn:hover {
+  background: #3f474e;
 }
