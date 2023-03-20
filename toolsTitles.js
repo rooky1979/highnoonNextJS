@@ -24,7 +24,7 @@ export const tools = [
     id: '4',
     book: 'Sober Cards:',
     tagline: 'Inspirational Playing Cards for Those of us in Recovery',
-    ref: "/SoberCards",
+    ref: "/soberCards",
     src: "sobercards.png",
   },
   {
