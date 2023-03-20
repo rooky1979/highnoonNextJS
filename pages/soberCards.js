@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "@/styles/Home.module.css";
 import { sobercards } from "../json/sobercards";
 
-const soberCards = () => {
+const SoberCards = () => {
 
   const inputFieldText = "Enter a card and suit (e.g. 10H, AS, QD)";
   const title = "Sober Cards";
@@ -72,4 +72,4 @@ const soberCards = () => {
     </>
   );
 }
-export default soberCards;
+export default SoberCards;
