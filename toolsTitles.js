@@ -38,7 +38,7 @@ export const tools = [
     id: "6",
     book: "Godshot:",
     tagline: "52 taglines from AA's Big Book",
-    ref: "/GodShot",
+    ref: "/godShot",
     src: "godshot.png",
   },
 ];
