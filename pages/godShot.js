@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "@/styles/Home.module.css";
 import { godshot } from "../json/godshot";
 
-const soberCards = () => {
+const GodShot = () => {
   const inputFieldText = "Click the button for a random shot from any tool";
   const title = "God Shot";
   const quoteNo = 450;
@@ -58,4 +58,4 @@ const soberCards = () => {
     </>
   );
 };
-export default soberCards;
+export default GodShot;

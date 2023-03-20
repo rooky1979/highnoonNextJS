@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {tools.map((tool) => (
-            <Link href={tool.ref}>
+            <Link href={tool.ref} key ={tool.id}>
             <img className={styles.card} src={tool.src}/>
             </Link>
           ))}
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {readings.map((reading) => (
-            <Link href={reading.ref}>
+            <Link href={reading.ref} key ={reading.id}>
             <img className={styles.card} src={reading.src}/>
             </Link>
           ))}
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           {formats.map((format) => (
-            <Link href={format.ref}>
+            <Link href={format.ref} key ={format.id}>
             <img className={styles.card} src={format.src}/>
             </Link>
           ))}
