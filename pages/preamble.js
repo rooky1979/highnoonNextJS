@@ -1,9 +1,7 @@
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import useSWR from "swr";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const Preamble = () => {

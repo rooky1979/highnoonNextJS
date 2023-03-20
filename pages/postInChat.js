@@ -1,13 +1,10 @@
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import useSWR from "swr";
 import Link from "next/link";
 
-
-const inter = Inter({ subsets: ["latin"] });
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function preamble() {
+const PostInChat = () => {
   const { data, error } = useSWR("/api/chatAPI", fetcher);
 
   if (error) return <div>Failed to load</div>;
@@ -131,3 +128,4 @@ export default function preamble() {
     </>
   );
 }
+export default PostInChat;
