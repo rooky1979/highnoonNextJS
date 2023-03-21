@@ -424,6 +424,7 @@
   justify-content: flex-start;
   padding-bottom: 10px;
   padding-top: 20px;
+  color: rgb(26, 25, 25);
 }
 
 @media (min-width: 357px) and (max-width: 500px) {
@@ -434,6 +435,7 @@
     justify-content: flex-start;
     padding-bottom: 10px;
     padding-top: 20px;
+    color: rgb(26, 25, 25);
   }
 }
 @media (min-width: 200px) and (max-width: 356px) {
@@ -444,6 +446,7 @@
     justify-content: flex-start;
     padding-bottom: 10px;
     padding-top: 20px;
+    color: rgb(26, 25, 25);
   }
 }
 
