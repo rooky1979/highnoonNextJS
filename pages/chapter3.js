@@ -1,6 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import useSWR from "swr";
 import Link from "next/link";
+import Spinner from "../components/spinner" 
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -8,7 +9,7 @@ const Chapter3 = () => {
   const { data, error } = useSWR("/api/chapter3API", fetcher);
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading....</div>;
+  if (!data) return <Spinner/>;
 
   const chapter3Text = JSON.parse(data);
   return (
