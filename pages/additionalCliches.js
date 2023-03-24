@@ -1,6 +1,6 @@
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { additionalcliches } from "../json/additionalcliches";
-import Tool from "@/components/Tool";
+import Tool from "../components/Tool";
 
 const additionalCliches = () => {
 

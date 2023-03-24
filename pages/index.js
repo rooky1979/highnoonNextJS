@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { tools } from "../toolsTitles";
 import { readings } from "../readingsTitles";
 import { formats } from "../format";

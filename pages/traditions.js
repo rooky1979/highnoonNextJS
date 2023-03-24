@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import useSWR from "swr";
 import Link from "next/link";
 

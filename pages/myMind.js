@@ -1,6 +1,6 @@
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { mymind } from "../json/mymind";
-import Tool from "@/components/Tool";
+import Tool from "../components/Tool";
 
 const myMind = () => {
   const inputFieldText = "Enter a number from 1 - 526";

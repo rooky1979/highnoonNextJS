@@ -1,6 +1,6 @@
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { bbcards } from "../json/bbcards";
-import Tool from "@/components/Tool";
+import Tool from "../components/Tool";
 
 const bbCards = () => {
 

@@ -1,6 +1,6 @@
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { commoncliches } from "../json/commoncliches";
-import Tool from "@/components/Tool";
+import Tool from "../components/Tool";
 
 const commonCliches = () => {
   const inputFieldText = "Enter a number from 1 - 101";
