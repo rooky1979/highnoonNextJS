@@ -8,7 +8,7 @@ const Preamble = () => {
   const { data, error } = useSWR("/api/preambleAPI", fetcher);
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading....</div>;
+  if (!data) return <div className={styles.spinner} ></div>;
 
   const preambleText = JSON.parse(data);
   return (

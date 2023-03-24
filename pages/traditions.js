@@ -8,7 +8,7 @@ const Traditions = () => {
   const { data, error } = useSWR("/api/traditionsAPI", fetcher);
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading....</div>;
+  if (!data) return <div className={styles.spinner} ></div>;
 
   const traditionsText = JSON.parse(data);
   return (

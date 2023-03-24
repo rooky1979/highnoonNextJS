@@ -8,7 +8,7 @@ const ResStatement = () => {
   const { data, error } = useSWR("/api/responsibilityAPI", fetcher);
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading....</div>;
+  if (!data) return <div className={styles.spinner} ></div>;
 
   const responsibilityText = JSON.parse(data);
   return (

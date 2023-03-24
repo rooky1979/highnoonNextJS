@@ -8,7 +8,7 @@ const Meeting = () => {
   const { data, error } = useSWR("/api/meetingAPI", fetcher);
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading....</div>;
+  if (!data) return <div className={styles.spinner} ></div>;
 
   const meetingText = JSON.parse(data);
   return (
