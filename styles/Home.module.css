@@ -601,7 +601,7 @@
 .backbtn:hover {
   background: #3f474e;
 }
-.loader{
+.spinner {
   position: fixed;
   left: 0px;
   top: 0px;
