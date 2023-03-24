@@ -10,7 +10,7 @@ const Chapter3 = () => {
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div class="loader"></div>;
-
+//test
   const chapter3Text = JSON.parse(data);
   return (
     <>
