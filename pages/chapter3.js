@@ -9,7 +9,7 @@ const Chapter3 = () => {
   const { data, error } = useSWR("/api/chapter3API", fetcher);
 
   if (error) return <div>Failed to load</div>;
-  if (!data) return <Spinner/>;
+  if (!data) return <div className={styles.spinner} ></div>;
 
   const chapter3Text = JSON.parse(data);
   return (
