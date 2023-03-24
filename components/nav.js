@@ -1,5 +1,4 @@
-import styles from "@/styles/Home.module.css";
-import Image from 'next/image'
+import styles from "../styles/Home.module.css";
 
 const Nav = () => {
     return <div className={styles.navbar}>
