@@ -5,8 +5,6 @@ import { tools } from "../toolsTitles";
 import { readings } from "../readingsTitles";
 import { formats } from "../format";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
