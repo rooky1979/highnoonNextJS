@@ -15,7 +15,7 @@ const Script = () => {
     <>
       <main className={styles.readingsmain}>
         <div className={styles.inline}>
-      <h1 className={styles.title}>12 Traditions of Alcoholics Anonymous</h1>
+      <h1 className={styles.title}>Host Script</h1>
       <Link href="./" className={styles.backbtn}>Back</Link>
       </div>
         <div className={styles.textpanel}>
