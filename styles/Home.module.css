@@ -427,7 +427,7 @@
   color: rgb(0, 0, 0);
 }
 
-@media (min-width: 357px) and (max-width: 500px) {
+@media (min-width: 387px) and (max-width: 656px) {
   .readingtext {
     font-size: small;
     font-weight: 500;
@@ -438,7 +438,7 @@
     color: rgb(0, 0, 0);
   }
 }
-@media (min-width: 200px) and (max-width: 356px) {
+@media (min-width: 200px) and (max-width: 386px) {
   .readingtext {
     font-size: x-small;
     font-weight: 500;
