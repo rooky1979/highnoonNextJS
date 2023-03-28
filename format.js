@@ -34,4 +34,11 @@ export const formats = [
     ref: "/meeting",
     src: "meeting.png",
   },
+  {
+    id: "6",
+    title: "Sponsor Contacts:",
+    tagline: "Sponsorship",
+    ref: "/sponsor",
+    src: "sponsors.png",
+  },
 ];

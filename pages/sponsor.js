@@ -4,36 +4,34 @@ import Link from "next/link";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-const Chapter3 = () => {
-  const { data, error } = useSWR("/api/chapter3API", fetcher);
+const Sponsor = () => {
+  const { data, error } = useSWR("/api/sponsorAPI", fetcher);
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div className={styles.spinner} ></div>;
 
-  const chapter3Text = JSON.parse(data);
+  const sponsorText = JSON.parse(data);
   return (
     <>
       <main className={styles.readingsmain}>
         <div className={styles.inline}>
-      <h1 className={styles.title}>Chapter 3 - More About Alcoholism</h1>
+      <h1 className={styles.title}>Sponsor Contacts:</h1>
       <Link href="./" className={styles.backbtn}>Back</Link>
       </div>
         <div className={styles.textpanel}>
-          <p className={styles.readingtext}>{chapter3Text.chapter3.text1}
+          <p className={styles.readingtext}>{sponsorText.sponsor.text}
           <br></br><br></br>
-          {chapter3Text.chapter3.text2}
+          {sponsorText.sponsor.text1}
           <br></br><br></br>
-          {chapter3Text.chapter3.text3}
+          {sponsorText.sponsor.text2}
           <br></br><br></br>
-          {chapter3Text.chapter3.text4}
+          {sponsorText.sponsor.text3}
           <br></br><br></br>
-          {chapter3Text.chapter3.text5}
-          <br></br><br></br>
-          {chapter3Text.chapter3.text6}
+          {sponsorText.sponsor.text4}
           </p>
         </div>
       </main>
     </>
   );
 }
-export default Chapter3;
+export default Sponsor;

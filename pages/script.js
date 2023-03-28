@@ -45,33 +45,25 @@ const Script = () => {
           <br></br><br></br>
           {scriptText.script.text11}
           <br></br><br></br>
-          {scriptText.script.text12}
-          <br></br><br></br>
           {scriptText.script.text13}
-          <br></br><br></br>
-          {scriptText.script.text14}
           <br></br><br></br>
           {scriptText.script.text15}
           <br></br><br></br>
           {scriptText.script.text16}
           <br></br><br></br>
-          <span><strong>AA SAFETY CARD ADAPTED FOR ONLINE (SHORT VERSION):  </strong></span>
+          {scriptText.script.text17}
           <br></br><br></br>
-          {scriptText.script.text18}
-          <br></br><br></br>
-          {scriptText.script.text19}
+          <span><strong>12 Traditions (Page 562)</strong></span>
           <br></br><br></br>
           {scriptText.script.text20}
           <br></br><br></br>
-          {scriptText.script.text21}
-          <br></br><br></br>
           <span><strong>VIRTUAL BASKET:  </strong></span>
+          <br></br><br></br>
+          {scriptText.script.text21}
           <br></br><br></br>
           {scriptText.script.text22}
           <br></br><br></br>
           {scriptText.script.text23}
-          <br></br><br></br>
-          {scriptText.script.text24}
           <br></br><br></br>
           {scriptText.script.text25}
           <br></br><br></br>
@@ -97,15 +89,9 @@ const Script = () => {
           <br></br><br></br>
           {scriptText.script.text34}
           <br></br><br></br>
-          <span><strong>WITH 2 MINUTES LEFT</strong></span>
-          <br></br><br></br>
-          {scriptText.script.text36}
-          <br></br><br></br>
           <span><strong>ANNOUNCEMENTS (CHAT copy/paste):</strong></span>
           <br></br><br></br>
           {scriptText.script.text38}
-          <br></br><br></br>
-          {scriptText.script.text39}
           <br></br><br></br>
           {scriptText.script.text40}
           <br></br><br></br>
