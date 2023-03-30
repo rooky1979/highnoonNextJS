@@ -50,78 +50,17 @@ const PostInChat = () => {
           {chatText.chat.text12}
           <br></br><br></br>
           {chatText.chat.text13}
-          <br></br>
+          <br></br><br></br>
           {chatText.chat.text14}
-          <br></br>
+          <br></br><br></br>
           {chatText.chat.text15}
-          <br></br>
+          <br></br><br></br>
           {chatText.chat.text16}
-          <br></br>
+          <br></br><br></br>
           {chatText.chat.text17}
           <br></br><br></br>
           {chatText.chat.text18}
           <br></br><br></br>
-          {chatText.chat.text19}
-          <br></br><br></br>
-          {chatText.chat.text20}
-          <br></br><br></br>
-          {chatText.chat.text21}
-          <br></br><br></br>
-          {chatText.chat.text22}
-          <br></br><br></br>
-          {chatText.chat.text23}
-          <br></br><br></br>
-          {chatText.chat.text24}
-          <br></br><br></br>
-          {chatText.chat.text25}
-          <br></br><br></br>
-          {chatText.chat.text26}
-          <br></br><br></br>
-          {chatText.chat.text27}
-          <br></br><br></br>
-          {chatText.chat.text28}
-          <br></br><br></br>
-          {chatText.chat.text29}
-          <br></br><br></br>
-          {chatText.chat.text30}
-          <br></br><br></br>
-          {chatText.chat.text31}
-          <br></br><br></br>
-          {chatText.chat.text32}
-          <br></br><br></br>
-          {chatText.chat.text33}
-          <br></br><br></br>
-          {chatText.chat.text34}
-          <br></br><br></br>
-          {chatText.chat.text35}
-          <br></br><br></br>
-          {chatText.chat.text36}
-          <br></br><br></br>
-          {chatText.chat.text37}
-          <br></br><br></br>
-          {chatText.chat.text38}
-          <br></br><br></br>
-          {chatText.chat.text39}
-          <br></br><br></br>
-          {chatText.chat.text40}
-          <br></br><br></br>
-          {chatText.chat.text41}
-          <br></br><br></br>
-          {chatText.chat.text42}
-          <br></br><br></br>
-          {chatText.chat.text44}
-          <br></br><br></br>
-          {chatText.chat.text45}
-          <br></br><br></br>
-          {chatText.chat.text46}
-          <br></br><br></br>
-          {chatText.chat.text47}
-          <br></br><br></br>
-          {chatText.chat.text48}
-          <br></br><br></br>
-          {chatText.chat.text49}
-          <br></br><br></br>
-          {chatText.chat.text50}
           </p>
         </div>
       </main>
