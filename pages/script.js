@@ -47,8 +47,6 @@ const Script = () => {
           <br></br><br></br>
           {scriptText.script.text13}
           <br></br><br></br>
-          {scriptText.script.text15}
-          <br></br><br></br>
           {scriptText.script.text16}
           <br></br><br></br>
           {scriptText.script.text17}
@@ -90,6 +88,8 @@ const Script = () => {
           {scriptText.script.text34}
           <br></br><br></br>
           <span><strong>ANNOUNCEMENTS (CHAT copy/paste):</strong></span>
+          <br></br><br></br>
+          {scriptText.script.text15}
           <br></br><br></br>
           {scriptText.script.text38}
           <br></br><br></br>
